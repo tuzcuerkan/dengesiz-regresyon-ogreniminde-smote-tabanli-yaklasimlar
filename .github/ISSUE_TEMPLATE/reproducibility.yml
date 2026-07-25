@@ -1,0 +1,89 @@
+name: Yeniden üretilebilirlik sorusu
+description: Kurulum, veri hazırlama, deney çalıştırma veya beklenen çıktılar hakkında soru iletin.
+title: "[Yeniden üretilebilirlik] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bu form bilimsel ve teknik yeniden üretilebilirlik soruları içindir.
+
+        TGSS ham veya satır düzeyi verisi, kişisel bilgi, erişim anahtarı ya da yeniden dağıtımı kısıtlanan veri dosyası paylaşmayın.
+
+  - type: dropdown
+    id: konu
+    attributes:
+      label: Konu
+      options:
+        - Ortam kurulumu ve bağımlılıklar
+        - Veri edinme veya yerel veri yerleşimi
+        - Veri hazırlama
+        - Ana deney
+        - Protokol veya veri duyarlılığı
+        - Bağımsız yeniden üretim
+        - Çıktıların doğrulanması
+        - Belgelendirme
+        - Diğer
+    validations:
+      required: true
+
+  - type: input
+    id: komut
+    attributes:
+      label: Çalıştırılan komut
+      description: Soruyla ilişkili komutu yazın.
+      placeholder: python tests/validate_repository.py
+    validations:
+      required: true
+
+  - type: textarea
+    id: ortam
+    attributes:
+      label: Çalışma ortamı
+      description: İşletim sistemi, Python sürümü ve ilgili paket bilgilerini belirtin.
+      placeholder: |
+        İşletim sistemi:
+        Python sürümü:
+        Kurulum yöntemi:
+    validations:
+      required: true
+
+  - type: input
+    id: veri_seti
+    attributes:
+      label: İlgili veri seti
+      description: Uygunsa yalnız veri setinin adını yazın. Veri dosyası yüklemeyin.
+      placeholder: Örneğin Abalone veya TGSS BMI
+
+  - type: textarea
+    id: beklenen
+    attributes:
+      label: Beklenen sonuç
+      description: Belgelere göre hangi sonucun oluşmasını beklediğinizi açıklayın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: gozlenen
+    attributes:
+      label: Gözlenen sonuç
+      description: Oluşan sonucu veya sorunun hangi aşamada ortaya çıktığını açıklayın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: kayitlar
+    attributes:
+      label: Hata iletisi veya günlük çıktısı
+      description: Varsa kişisel yolları, kullanıcı adlarını, erişim bilgilerini ve kısıtlı verileri kaldırarak paylaşın.
+      render: shell
+
+  - type: checkboxes
+    id: onay
+    attributes:
+      label: Paylaşım kontrolü
+      options:
+        - label: README ve ilgili yeniden üretim belgelerini inceledim.
+          required: true
+        - label: Bu bildirim TGSS satır düzeyi verisi, kişisel bilgi, erişim anahtarı veya yeniden dağıtımı kısıtlanan veri içermiyor.
+          required: true

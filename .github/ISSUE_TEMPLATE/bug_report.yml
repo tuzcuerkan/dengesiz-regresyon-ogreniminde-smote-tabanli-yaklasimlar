@@ -1,0 +1,87 @@
+name: Hata bildirimi
+description: Kod, iş akışı, doğrulama veya belgelerde tekrarlanabilir bir hata bildirin.
+title: "[Hata] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirimin yeniden üretilebilmesi için aşağıdaki alanları mümkün olduğunca eksiksiz doldurun.
+
+        Güvenlik açıklarını veya kısıtlı verileri bu formda paylaşmayın. Bu tür konular için özel güvenlik bildirimi kullanın.
+
+  - type: dropdown
+    id: alan
+    attributes:
+      label: Hatanın bulunduğu alan
+      options:
+        - Veri hazırlama
+        - Kat ve grup oluşturma
+        - Yeniden örnekleme veya modelleme
+        - Performans ölçütleri
+        - Deney çalıştırıcıları
+        - Sonuç ve tablo dosyaları
+        - Depo doğrulama aracı
+        - GitHub Actions
+        - Belgeler
+        - Diğer
+    validations:
+      required: true
+
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Hatayı yeniden üretme adımları
+      description: Başlangıçtan hatanın görüldüğü noktaya kadar izlenen adımları sıralayın.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: beklenen
+    attributes:
+      label: Beklenen davranış
+      description: Normalde ne olması gerektiğini açıklayın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: gozlenen
+    attributes:
+      label: Gözlenen davranış
+      description: Gerçekte ne olduğunu açıklayın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ortam
+    attributes:
+      label: Çalışma ortamı
+      placeholder: |
+        İşletim sistemi:
+        Python sürümü:
+        İlgili paket sürümleri:
+    validations:
+      required: true
+
+  - type: textarea
+    id: kayitlar
+    attributes:
+      label: Hata iletisi veya günlük çıktısı
+      description: Kişisel yolları, erişim bilgilerini ve kısıtlı verileri kaldırarak paylaşın.
+      render: shell
+
+  - type: checkboxes
+    id: onay
+    attributes:
+      label: Bildirim kontrolü
+      options:
+        - label: Aynı hatanın daha önce bildirilmediğini kontrol ettim.
+          required: true
+        - label: Depo doğrulama aracını çalıştırdım veya neden çalıştıramadığımı açıkladım.
+          required: true
+        - label: Bu bildirim TGSS satır düzeyi verisi, kişisel bilgi, erişim anahtarı veya yeniden dağıtımı kısıtlanan veri içermiyor.
+          required: true
