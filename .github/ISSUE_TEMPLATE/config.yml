@@ -1,8 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Güvenlik veya veri gizliliği bildirimi
-    url: https://github.com/tuzcuerkan/dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar/security/advisories/new
-    about: Güvenlik açıklarını, erişim bilgilerini ve kısıtlı veri sorunlarını özel olarak bildirin.
   - name: Veri erişimi ve gizlilik belgesi
     url: https://github.com/tuzcuerkan/dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar/blob/main/docs/data_access_and_privacy.md
     about: Veri edinme, TGSS paylaşım sınırları ve gizlilik kurallarını inceleyin.
