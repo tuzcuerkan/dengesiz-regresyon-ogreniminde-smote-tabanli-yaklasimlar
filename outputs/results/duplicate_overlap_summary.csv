@@ -1,0 +1,4 @@
+dataset_key,split_count,overlap_group_count,overlap_test_rows,total_test_rows,overlap_test_row_pct
+concrete_standard_kfold,10,81,93,2060,4.514563106796117
+tgss_income_standard_kfold,10,111,112,5110,2.191780821917808
+wine_quality_red_standard_kfold,10,735,756,3198,23.639774859287055

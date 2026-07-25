@@ -1,0 +1,7 @@
+Veri Seti,RMSE En İyi Model,RMSE,SERA En İyi Model,SERA,R² En İyi Model,R²
+Abalone,İlgililik Ağırlıklı RF,"2,150",SMOTE-R + RF,"2,782",İlgililik Ağırlıklı RF,"0,555"
+Air Quality NO2,RF,"20,519",SMOTE-R + RF,"246,038",RF,"0,810"
+California Housing,RF,"0,491",SMOGN + RF,"0,116",RF,"0,819"
+Concrete Compressive Strength,SMOTE-R + RF,"4,964",SMOTE-R + RF,"10,502",SMOTE-R + RF,"0,911"
+Servo,SMOTE-R + RF,"0,636",SMOTE-R + RF,"0,274",SMOTE-R + RF,"0,828"
+Wine Quality Red,RF,"0,632",SMOTE-R + RF,"0,188",RF,"0,386"

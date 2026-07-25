@@ -1,0 +1,3 @@
+Veri Seti,RMSE En İyi Model,RMSE,SERA En İyi Model,SERA,R² En İyi Model,R²
+TGSS BMI,EKK,"4,751",SMOGN + RF,"13,350",EKK,"0,099"
+TGSS yaklaşık kişisel aylık net gelir,İlgililik Ağırlıklı RF,"18.443,136",SMOGN + RF,"2,434 × 10^8",İlgililik Ağırlıklı RF,"0,365"

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "main_protocol": "group-controlled repeated 5-fold, 2 repeats",
+  "main_evaluations": 400,
+  "data_sensitivity_evaluations": 250,
+  "protocol_sensitivity_evaluations": 400,
+  "independent_reproduction_evaluations": 400,
+  "total_evaluations": 1450,
+  "main_group_overlap_total": 0,
+  "invalid_synthetic_value_total": 0,
+  "protocol_sensitivity_winner_agreement": "41/64",
+  "protocol_sensitivity_mean_rank_correlation": 0.846875
+}

@@ -1,0 +1,11 @@
+Ölçüt,Model,Birincilik
+RMSE,EKK,0
+RMSE,RF,3
+RMSE,SMOTE-R + RF,2
+RMSE,SMOGN + RF,0
+RMSE,İlgililik Ağırlıklı RF,1
+SERA,EKK,0
+SERA,RF,0
+SERA,SMOTE-R + RF,5
+SERA,SMOGN + RF,1
+SERA,İlgililik Ağırlıklı RF,0

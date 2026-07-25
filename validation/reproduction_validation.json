@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "evaluations": 400,
+  "baseline_evaluations": 400,
+  "task_ids_identical": true,
+  "structural_fields_all_match": true,
+  "metrics_numerically_equivalent": true,
+  "absolute_tolerance": 1e-10,
+  "relative_tolerance": 1e-12,
+  "maximum_scaled_relative_difference": 9.148488346941788e-16,
+  "winner_agreement": {
+    "same": 88,
+    "total": 88
+  },
+  "full_rank_agreement": {
+    "same": 88,
+    "total": 88
+  },
+  "note": "Son bit düzeyindeki kayan nokta farkları bilimsel sonuçları, model birinciliklerini veya sıralamaları değiştirmemiştir."
+}

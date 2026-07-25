@@ -1,0 +1,12 @@
+# Lisans kapsamı
+
+Bu depo iki ayrı lisans kapsamında yayımlanmaktadır:
+
+1. Kaynak kod, çalıştırma betikleri, testler ve otomasyon dosyaları
+   `LICENSE-CODE` dosyasında verilen MIT Lisansı kapsamındadır.
+2. Belgeler ve araştırma çıktıları `LICENSE-CONTENT.md` dosyasında açıklanan
+   Creative Commons Atıf 4.0 Uluslararası Lisansı kapsamındadır.
+
+Ham TGSS mikro verisi, üçüncü taraf veri setleri ve bunların özgün sağlayıcılarca
+korunan içerikleri bu lisansların kapsamında değildir. Bu depodaki hiçbir lisans
+bildirimi, üçüncü taraf materyaller için ek kullanım hakkı vermez.

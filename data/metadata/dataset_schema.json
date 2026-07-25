@@ -1,0 +1,361 @@
+{
+  "schema_name": "canonical_dataset_schema",
+  "version": "2.0",
+  "created_for": "Aşama 6 düzeltilmiş ortak protokol ve 10 kat duyarlılık analizi",
+  "global_rules": {
+    "main_cv": "Repeated group-aware 5-fold, 2 repeats, common splits for all models",
+    "cv_sensitivity": "Group-aware 10-fold, 1 repeat, same preparation and model settings",
+    "predefined_transformations": "Codebook/source-schema rules may be applied before splitting only when they do not learn sample statistics.",
+    "learned_transformations": "Imputation, scaling, relevance, weighting and resampling are fit on training fold only.",
+    "duplicate_group_rule": "Rows with identical canonical predictor vectors share one group id and cannot be split across train/test.",
+    "raw_tgss_sharing": "forbidden"
+  },
+  "datasets": {
+    "abalone": {
+      "display_name": "Abalone",
+      "raw_rows": 4177,
+      "target": "Rings",
+      "raw_predictors": 8,
+      "model_predictors": 10,
+      "predictor_columns": [
+        "length",
+        "diameter",
+        "height",
+        "whole_weight",
+        "shucked_weight",
+        "viscera_weight",
+        "shell_weight",
+        "sex_F",
+        "sex_I",
+        "sex_M"
+      ],
+      "feature_types": {
+        "continuous": [
+          "length",
+          "diameter",
+          "height",
+          "whole_weight",
+          "shucked_weight",
+          "viscera_weight",
+          "shell_weight"
+        ],
+        "binary": [
+          "sex_F",
+          "sex_I",
+          "sex_M"
+        ]
+      },
+      "group_key": "all canonical predictor columns",
+      "group_count": 4177
+    },
+    "california_housing": {
+      "display_name": "California Housing",
+      "raw_rows": 20640,
+      "target": "MedHouseVal",
+      "raw_predictors": 8,
+      "model_predictors": 8,
+      "predictor_columns": [
+        "MedInc",
+        "HouseAge",
+        "AveRooms",
+        "AveBedrms",
+        "Population",
+        "AveOccup",
+        "Latitude",
+        "Longitude"
+      ],
+      "feature_types": {
+        "continuous": [
+          "MedInc",
+          "HouseAge",
+          "AveRooms",
+          "AveBedrms",
+          "Population",
+          "AveOccup",
+          "Latitude",
+          "Longitude"
+        ]
+      },
+      "group_key": "all canonical predictor columns",
+      "group_count": 20640
+    },
+    "concrete": {
+      "display_name": "Concrete Compressive Strength",
+      "raw_rows": 1030,
+      "target": "Concrete compressive strength(MPa, megapascals) ",
+      "raw_predictors": 8,
+      "model_predictors": 8,
+      "predictor_columns": [
+        "Cement (component 1)(kg in a m^3 mixture)",
+        "Blast Furnace Slag (component 2)(kg in a m^3 mixture)",
+        "Fly Ash (component 3)(kg in a m^3 mixture)",
+        "Water  (component 4)(kg in a m^3 mixture)",
+        "Superplasticizer (component 5)(kg in a m^3 mixture)",
+        "Coarse Aggregate  (component 6)(kg in a m^3 mixture)",
+        "Fine Aggregate (component 7)(kg in a m^3 mixture)",
+        "Age (day)"
+      ],
+      "feature_types": {
+        "continuous": [
+          "Cement (component 1)(kg in a m^3 mixture)",
+          "Blast Furnace Slag (component 2)(kg in a m^3 mixture)",
+          "Fly Ash (component 3)(kg in a m^3 mixture)",
+          "Water  (component 4)(kg in a m^3 mixture)",
+          "Superplasticizer (component 5)(kg in a m^3 mixture)",
+          "Coarse Aggregate  (component 6)(kg in a m^3 mixture)",
+          "Fine Aggregate (component 7)(kg in a m^3 mixture)",
+          "Age (day)"
+        ]
+      },
+      "group_key": "all canonical predictor columns",
+      "group_count": 996
+    },
+    "wine_quality_red": {
+      "display_name": "Wine Quality Red",
+      "raw_rows": 1599,
+      "target": "quality",
+      "raw_predictors": 11,
+      "model_predictors": 11,
+      "predictor_columns": [
+        "fixed acidity",
+        "volatile acidity",
+        "citric acid",
+        "residual sugar",
+        "chlorides",
+        "free sulfur dioxide",
+        "total sulfur dioxide",
+        "density",
+        "pH",
+        "sulphates",
+        "alcohol"
+      ],
+      "feature_types": {
+        "continuous": [
+          "fixed acidity",
+          "volatile acidity",
+          "citric acid",
+          "residual sugar",
+          "chlorides",
+          "free sulfur dioxide",
+          "total sulfur dioxide",
+          "density",
+          "pH",
+          "sulphates",
+          "alcohol"
+        ]
+      },
+      "group_key": "all canonical predictor columns",
+      "group_count": 1359
+    },
+    "air_quality_no2": {
+      "display_name": "Air Quality NO2",
+      "raw_rows": 9357,
+      "target_valid_rows": 7715,
+      "target": "NO2(GT)",
+      "main_predictors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S3(NOx)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "T",
+        "RH",
+        "AH"
+      ],
+      "extended_predictors": [
+        "PT08.S1(CO)",
+        "PT08.S2(NMHC)",
+        "PT08.S3(NOx)",
+        "PT08.S4(NO2)",
+        "PT08.S5(O3)",
+        "T",
+        "RH",
+        "AH",
+        "CO(GT)",
+        "C6H6(GT)",
+        "NOx(GT)"
+      ],
+      "excluded": [
+        "Date",
+        "Time",
+        "NMHC(GT)"
+      ],
+      "main_feature_missing_cells": 2576,
+      "extended_feature_missing_cells": 3355,
+      "feature_types": {
+        "continuous": [
+          "PT08.S1(CO)",
+          "PT08.S2(NMHC)",
+          "PT08.S3(NOx)",
+          "PT08.S4(NO2)",
+          "PT08.S5(O3)",
+          "T",
+          "RH",
+          "AH",
+          "CO(GT)",
+          "C6H6(GT)",
+          "NOx(GT)"
+        ]
+      },
+      "group_key": "all canonical main predictor columns",
+      "group_count": 7394
+    },
+    "servo": {
+      "display_name": "Servo",
+      "raw_rows": 167,
+      "target": "class",
+      "raw_predictors": 4,
+      "model_predictors": 12,
+      "predictor_columns": [
+        "pgain",
+        "vgain",
+        "motor_A",
+        "motor_B",
+        "motor_C",
+        "motor_D",
+        "motor_E",
+        "screw_A",
+        "screw_B",
+        "screw_C",
+        "screw_D",
+        "screw_E"
+      ],
+      "feature_types": {
+        "ordinal": [
+          "pgain",
+          "vgain"
+        ],
+        "binary": [
+          "motor_A",
+          "motor_B",
+          "motor_C",
+          "motor_D",
+          "motor_E",
+          "screw_A",
+          "screw_B",
+          "screw_C",
+          "screw_D",
+          "screw_E"
+        ]
+      },
+      "group_key": "all canonical predictor columns",
+      "group_count": 167
+    },
+    "tgss_bmi": {
+      "display_name": "TGSS BMI",
+      "raw_rows": 2615,
+      "target_valid_rows": 1695,
+      "target": "bmi",
+      "raw_predictors": 17,
+      "continuous": [
+        "age"
+      ],
+      "ordinal": [
+        "educlt",
+        "income",
+        "incomehh",
+        "health"
+      ],
+      "nominal": [
+        "gender",
+        "marital",
+        "nuts1"
+      ],
+      "binary": [
+        "empstat1",
+        "empstat2",
+        "empstat3",
+        "empstat4",
+        "empstat5",
+        "empstat6",
+        "empstat7",
+        "empstat8",
+        "empstatot"
+      ],
+      "excluded": [
+        "height",
+        "weight",
+        "workstat"
+      ],
+      "expected_encoded_feature_count": 31,
+      "feature_missing_cells_preimputation": 103,
+      "feature_rows_with_missing": 78,
+      "group_key": "all canonical raw predictor columns",
+      "group_count": 1691,
+      "target_exclusion_counts": {
+        "structural_missing_-90": 917,
+        "below_10_or_above_60_numeric": 3
+      }
+    },
+    "tgss_income": {
+      "display_name": "TGSS approximate personal monthly net income",
+      "raw_rows": 2615,
+      "target_valid_rows": 2555,
+      "target": "approx_personal_monthly_net_income_tl",
+      "raw_predictors": 17,
+      "predictor_columns": [
+        "age",
+        "gender_female",
+        "education_level",
+        "household_members_excl_self",
+        "self_rated_health",
+        "urbanisation_level",
+        "health_insurance",
+        "currently_working",
+        "student",
+        "unemployed_active",
+        "unemployed_inactive",
+        "permanent_illness_disability",
+        "retired",
+        "compulsory_military",
+        "home_care_work",
+        "other_employment_status",
+        "weekly_work_hours"
+      ],
+      "feature_types": {
+        "continuous": [
+          "age",
+          "household_members_excl_self",
+          "weekly_work_hours"
+        ],
+        "ordinal": [
+          "education_level",
+          "self_rated_health",
+          "urbanisation_level"
+        ],
+        "binary": [
+          "gender_female",
+          "health_insurance",
+          "currently_working",
+          "student",
+          "unemployed_active",
+          "unemployed_inactive",
+          "permanent_illness_disability",
+          "retired",
+          "compulsory_military",
+          "home_care_work",
+          "other_employment_status"
+        ]
+      },
+      "excluded_due_to_target_proximity": [
+        "incomehh",
+        "incomesp",
+        "satinc",
+        "inchhrel",
+        "inchhesy",
+        "inchhlast12",
+        "inchhnext12",
+        "inctyp1-inctyp12"
+      ],
+      "feature_missing_cells_preimputation": 71,
+      "group_key": "all canonical predictor columns",
+      "group_count": 2519,
+      "target_exclusion_counts": {
+        "do_not_know_-88": 16,
+        "refuse_-99": 44,
+        "not_applicable_-90": 0
+      }
+    }
+  },
+  "field_count": 98
+}

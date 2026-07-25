@@ -1,0 +1,24 @@
+﻿tgss_code,original_income_interval,representative_value_tl,transformation_rule
+1,Hiç gelirim yok,0,Gelir yok: 0 TL
+2,4.999 TL veya daha az,2500,Kapalı aralık orta noktası
+3,5.000 - 7.499 TL,6250,Kapalı aralık orta noktası
+4,7.500 - 9.999 TL,8750,Kapalı aralık orta noktası
+5,10.000 - 12.499 TL,11250,Kapalı aralık orta noktası
+6,12.500 - 14.999 TL,13750,Kapalı aralık orta noktası
+7,15.000 - 16.999 TL,16000,Kapalı aralık orta noktası
+8,17.000 - 19.999 TL,18500,Kapalı aralık orta noktası
+9,20.000 - 24.999 TL,22500,Kapalı aralık orta noktası
+10,25.000 - 29.999 TL,27500,Kapalı aralık orta noktası
+11,30.000 - 34.999 TL,32500,Kapalı aralık orta noktası
+12,35.000 - 39.999 TL,37500,Kapalı aralık orta noktası
+13,40.000 - 49.999 TL,45000,Kapalı aralık orta noktası
+14,50.000 - 59.999 TL,55000,Kapalı aralık orta noktası
+15,60.000 - 69.999 TL,65000,Kapalı aralık orta noktası
+16,70.000 - 79.999 TL,75000,Kapalı aralık orta noktası
+17,80.000 - 89.999 TL,85000,Kapalı aralık orta noktası
+18,90.000 - 99.999 TL,95000,Kapalı aralık orta noktası
+19,100.000 - 124.999 TL,112500,Kapalı aralık orta noktası
+20,125.000 - 149.999 TL,137500,Kapalı aralık orta noktası
+21,150.000 - 174.999 TL,162500,Kapalı aralık orta noktası
+22,175.000 - 199.999 TL,187500,Kapalı aralık orta noktası
+23,200.000 TL veya daha çok,212500,Önceki 25.000 TL aralık genişliği sürdürülerek varsayımsal üst aralığın orta noktası

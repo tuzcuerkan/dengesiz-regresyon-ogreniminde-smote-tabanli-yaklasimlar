@@ -1,0 +1,9 @@
+Veri Seti,Kaynak,Alan,Gözlem,Model Değişkeni,Hedef
+Abalone,UCI,Biyoloji,4.177,10,Rings
+California Housing,scikit-learn,Konut değerleri,20.640,8,MedHouseVal
+Concrete Compressive Strength,UCI,İnşaat mühendisliği,1.030,8,Beton basınç dayanımı
+Wine Quality Red,UCI,Gıda kalitesi,1.599,11,quality
+Air Quality NO2,UCI,Çevresel izleme,7.715,8,NO2(GT)
+Servo,UCI,Otomasyon,167,12,class
+TGSS BMI,TGSS 2024,Sosyal araştırma / sağlık,1.695,31,bmi
+TGSS yaklaşık kişisel aylık net gelir,TGSS 2024,Sosyal araştırma / ekonomi,2.555,17,Yaklaşık kişisel aylık net gelir

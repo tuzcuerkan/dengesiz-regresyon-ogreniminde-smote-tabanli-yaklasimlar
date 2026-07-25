@@ -1,0 +1,5 @@
+Çalışma,Protokol,Değerlendirme,Grup Örtüşmesi,Amaç
+Ana protokol,Grup kontrollü iki tekrarlı 5 kat,400,0,Tezin ana sonuçları
+Kat sayısı duyarlılığı,Grup kontrollü tek 10 kat,400,0,Ana sonuçların kat sayısına bağımlılığını sınama
+Veri hazırlama duyarlılıkları,"BMI şeması, Air Quality kapsamı, standart/gruplu kat",250,Standart katlarda 4.805 etkilenen test ataması,Yöntemsel kararların etkisini ölçme
+Bağımsız yeniden üretim,Ana 400 görevin sıfırdan ikinci çalıştırması,400,0,88/88 kazanan ve tam sıra uyumu

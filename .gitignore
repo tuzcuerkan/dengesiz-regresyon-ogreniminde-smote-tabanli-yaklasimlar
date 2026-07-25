@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Local runs
+.runs/
+
+# Raw, private and restricted data
+data/raw/**
+!data/raw/
+!data/raw/README.md
+data/private/
+data/restricted/
+TGSS2024*
+tgss2024*
+TGSS_2024*
+tgss_2024*
+*.sav
+*.dta
+*.rds
+*.parquet
+*.feather
+
+# Office and archive intermediates
+*.xlsx
+*.xls
+*.zip
+~$*
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,11 @@
+Veri Seti,Model,RMSE,MAE,R²
+TGSS BMI,EKK,"4,751","3,654","0,099"
+TGSS BMI,RF,"4,810","3,714","0,075"
+TGSS BMI,SMOTE-R + RF,"5,053","3,946","-0,022"
+TGSS BMI,SMOGN + RF,"5,029","3,938","-0,012"
+TGSS BMI,İlgililik Ağırlıklı RF,"4,810","3,728","0,076"
+TGSS yaklaşık kişisel aylık net gelir,EKK,"18.811,893","11.115,195","0,339"
+TGSS yaklaşık kişisel aylık net gelir,RF,"18.539,364","10.592,114","0,358"
+TGSS yaklaşık kişisel aylık net gelir,SMOTE-R + RF,"19.906,315","12.492,123","0,257"
+TGSS yaklaşık kişisel aylık net gelir,SMOGN + RF,"19.622,238","12.087,122","0,280"
+TGSS yaklaşık kişisel aylık net gelir,İlgililik Ağırlıklı RF,"18.443,136","10.562,091","0,365"

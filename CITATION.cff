@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Bu yazılım ve yeniden üretilebilirlik paketini kullanıyorsanız lütfen aşağıdaki çalışmaya atıf yapın."
+title: "Dengesiz Regresyon Öğreniminde SMOTE Tabanlı Yaklaşımların Karşılaştırılması"
+type: software
+authors:
+  - family-names: "Tuzcu"
+    given-names: "Erkan"
+    orcid: "https://orcid.org/0009-0000-6595-1171"
+repository-code: "https://github.com/tuzcuerkan/dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar"
+keywords:
+  - imbalanced regression
+  - SMOTE-R
+  - SMOGN
+  - relevance function
+  - OİHA
+  - random forest
