@@ -2,6 +2,10 @@
 
 Bu belge, tezde kullanılan tablo ve şekillerin depodaki kaynaklarını gösterir.
 
+Tablo 6.1 ile Tablo 7.2, deneysel sayısal çıktıdan otomatik üretilmeyen
+açıklayıcı içeriklerdir. Bu nedenle bu iki tablo için ayrı bir CSV kaynağı
+bulunmaz.
+
 ## Tablolar
 
 | Tez çıktısı | Depo kaynağı |
@@ -35,4 +39,3 @@ Bu belge, tezde kullanılan tablo ve şekillerin depodaki kaynaklarını göster
 - Tek 10 kat sonuçları: `outputs/results/grouped_10fold_fold_results.csv`
 - Bağımsız yeniden üretim sonuçları: `outputs/results/independent_reproduction_fold_results.csv`
 - Bağımsız yeniden üretim özeti: `outputs/results/independent_reproduction_summary.csv`
-

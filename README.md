@@ -2,6 +2,8 @@
 
 Bu depo, dengesiz regresyon problemlerinde SMOTE tabanlı yeniden örnekleme yaklaşımlarını, ilgililik ağırlıklı öğrenmeyi ve standart regresyon modellerini ortak bir deneysel düzende karşılaştıran yüksek lisans tezinin kodlarını, sonuçlarını ve yeniden üretilebilirlik kayıtlarını içerir.
 
+[![Depo doğrulama](https://github.com/tuzcuerkan/dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar/actions/workflows/repository-validation.yml/badge.svg?branch=main)](https://github.com/tuzcuerkan/dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar/actions/workflows/repository-validation.yml)
+
 ## Tez bilgileri
 
 | Alan | Bilgi |
@@ -62,9 +64,26 @@ Hiçbir yöntem bütün veri setleri ve performans ölçütlerinde evrensel üst
 | `docs/` | Deney protokolü, veri erişimi ve yeniden üretim belgeleri |
 | `CITATION.cff` | Akademik atıf bilgisi |
 
+## Hızlı belgeler
+
+- [Deney protokolü](docs/experiment_protocol.md)
+- [Yöntem uygulaması](docs/methodology.md)
+- [Veri erişimi ve gizlilik](docs/data_access_and_privacy.md)
+- [Yeniden üretim kılavuzu](docs/reproducibility.md)
+- [Tez tablo ve şekil kaynakları](docs/thesis_outputs.md)
+
 ## Ortam kurulumu
 
 Çalışma Python 3.13.5 ortamında yürütülmüştür.
+
+Depoyu yerel çalışma alanına alın:
+
+```bash
+git clone https://github.com/tuzcuerkan/dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar.git
+cd dengesiz-regresyon-ogreniminde-smote-tabanli-yaklasimlar
+```
+
+Sanal ortamı oluşturun:
 
 ```bash
 python -m venv .venv
